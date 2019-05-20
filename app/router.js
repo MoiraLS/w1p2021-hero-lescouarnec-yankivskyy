@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import Home from './components/Home.vue';
-import Character from './components/Character.vue';
+import Home from './components/Home/Home.vue';
+import Character from './components/Character/Character.vue';
 import Game from './components/Game.vue';
 import Win from './components/Win.vue';
 import Lose from './components/Lose.vue';
