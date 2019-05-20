@@ -21,7 +21,7 @@ URL du site : https://vue-yankivskyy-lescouarnec.netlify.com
 | Pages | Une page d'accueil est présente | Oui |
 | Pages | Une page de choix du personnage est présente | Non |
 | Pages | Une page de victoire est présente | Non |
-| Pages | Une page d'échec est présente | Non |
+| Pages | Une page d'échec est présente | Oui |
 | Routing | Une route dont l'`id` varie permet d'afficher les différentes étapes du jeu | Oui |
 | Routing | Lorsqu'on recharge la page (`Ctrl + R`), on se trouve toujours à la même étape | Non |
 | Transitions | Chaque page apparaît grâce à une transition fluide (la complexité de la transition n'est pas prise en compte ici) | Non |
