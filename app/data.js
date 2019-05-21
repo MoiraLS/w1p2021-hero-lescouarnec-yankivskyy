@@ -1,4 +1,5 @@
-const walking = require('./assets/img/Walking.png')
+const walking = require('./assets/img/Walking.png');
+const dead = require('./assets/img/cadavre.png');
 
 export default{
 "1": {
@@ -10,6 +11,7 @@ export default{
     "toTwo": "/lose"
   },
   "2": {
+    "img": dead,
     "title": "Vous avez tué le mutant! Continuons notre quête...",
     "BTNA":"Prélever un trophé du mutant",
     "BTNB": "Poursuivre notre chemin",
