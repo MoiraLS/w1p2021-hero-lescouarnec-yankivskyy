@@ -1,7 +1,8 @@
 @import 'reset';
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
-$hetic-green: #0de595;
+$vault: #0067B1;
+$Yellow: #ffeb33;
 
 body,
 button,
@@ -12,7 +13,7 @@ textarea {
 }
 
 .big-header {
-  background-color: $hetic-green;
+  background-color: $vault;
   height: 100vh;
 
   display: flex;
@@ -23,13 +24,18 @@ textarea {
 
   color: white;
 }
-
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70vw;
+}
 .button {
-  color: $hetic-green;
+  color: white;
   text-decoration: none;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
-  display: inline-block;
-  border: none;
+  background: $vault;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  border: solid $Yellow 2px;
 }

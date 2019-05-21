@@ -6,8 +6,13 @@
   </div>
 </template>
 
+<style lang="scss" scoped>
+  @import "Lose"
+</style>
+
 <script>
 export default {
+
     
 };
 </script>

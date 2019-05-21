@@ -1,16 +1,35 @@
 <template>
   <div class="big-header">
+    <img v-bind:src="img" alt="Vault">
     <p>{{ title }}</p>
     <br />
-    <router-link v-for="action in actions" :key="action.to" class="button" :to="'/game/' + action.to">{{ action.label }}</router-link>
+    <div class="buttons">
+      <router-link  class="button" :to="actionOne">{{ BTNA }}</router-link>
+      <router-link  class="button" :to="actionTwo">{{ BTNB }}</router-link>
+    </div>
   </div>
 </template>
 
 <script>
-import json from '../data.json'
+import json from '../data.js'
 
 export default {
     computed: {
+      id(){
+        return this.$route.params.id;
+      },
+      actionOne(){
+        return json[this.id].toOne;
+      },
+      actionTwo(){
+        return json[this.id].toTwo;
+      },
+      BTNA(){
+        return json[this.id].BTNA
+      },
+      BTNB(){
+        return json[this.id].BTNB
+      },
       title() {
         const id = this.$route.params.id;
         const step = json[id];
@@ -19,14 +38,19 @@ export default {
 
         return step.title;
       },
-      actions() {
+
+      img() {
         const id = this.$route.params.id;
         const step = json[id];
+        return step.img;
+      }
+      /* actions() {
+        const step = json[this.id];
         if (!step)
           return ''; // FIXME handle unexisting json key
 
         return step.actions;
-      }
+      } */
     }
 };
 </script>

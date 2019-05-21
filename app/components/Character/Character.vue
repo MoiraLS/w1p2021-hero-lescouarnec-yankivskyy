@@ -13,7 +13,7 @@
 </style>
 
 <script>
-import json from '../../data.json'
+import json from '../../data.js'
 
 export default {
     
