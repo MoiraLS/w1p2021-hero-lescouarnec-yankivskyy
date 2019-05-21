@@ -5,9 +5,7 @@
     <img src="../../assets/img/Vault-Boy.png" alt="" srcset="">
     <br />
     <router-link class="button" to="/character">Commencer l'aventure</router-link>
-    <audio autoplay loop>
-      <source src="../../assets/audio/Music-Menu.mp3" type="audio/mpeg">
-    </audio>
+    <audio src="../../assets/audio/Music-Menu.mp3" autoplay loop ref="audio"></audio>
   </div>
 </template>
 

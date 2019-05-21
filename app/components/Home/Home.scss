@@ -1,7 +1,8 @@
-@import '../../assets/scss/reset.scss';
+@import '../../assets/scss/reset.scss';;
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 $vault: #0067B1;
+$Yellow: #ffeb33;
 
 body,
 button,
@@ -10,12 +11,10 @@ select,
 textarea {
   font-family: 'Roboto';
 }
-
 h1{
-    font-size: 50px;
-    font-weight: bold
+  font-size: 60px;
+  font-weight: bold;
 }
-
 .big-header {
   background-color: $vault;
   height: 100vh;
@@ -26,12 +25,18 @@ h1{
   flex-direction: column;
   color: white;
 }
-
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70vw;
+}
 .button {
-  color: $vault;
+  color: white;
   text-decoration: none;
-  background: white;
-  padding: 5px;
-  display: inline-block;
-  border: none;
+  background: $vault;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  border: solid $Yellow 2px;
 }

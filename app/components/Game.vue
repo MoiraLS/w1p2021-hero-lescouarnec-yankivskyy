@@ -1,6 +1,7 @@
 <template>
   <div class="big-header">
     <img v-bind:src="img" alt="Vault">
+    <img v-bind:src="img2" >
     <p>{{ title }}</p>
     <br />
     <div class="buttons">
@@ -43,6 +44,12 @@ export default {
         const id = this.$route.params.id;
         const step = json[id];
         return step.img;
+      },
+
+      img2() {
+        const id = this.$route.params.id;
+        const step = json[id];
+        return step.img2;
       }
       /* actions() {
         const step = json[this.id];

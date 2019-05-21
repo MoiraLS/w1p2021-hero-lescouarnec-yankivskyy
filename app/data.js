@@ -1,9 +1,14 @@
 const walking = require('./assets/img/Walking.png');
+const monstre = require('./assets/img/méchant.png');
+const monstreMort = require('./assets/img/die.png');
+const eat = require('./assets/img/eat.png');
+const eating = require('./assets/img/eating.png');
 const dead = require('./assets/img/cadavre.png');
 
 export default{
 "1": {
     "img": walking,
+    "img2": monstre,
     "title": "Vous vous êtes mis en route vers votre destinée, le chemin sera périlleux vous devrez faire les bons choix pour sauver la démoncratie capitaliste !",
     "BTNA":"Sortir votre pistolet démocratique",
     "BTNB": "Je suis venu en paix l'ami...",
@@ -11,7 +16,7 @@ export default{
     "toTwo": "/lose"
   },
   "2": {
-    "img": dead,
+    "img": monstreMort,
     "title": "Vous avez tué le mutant! Continuons notre quête...",
     "BTNA":"Prélever un trophé du mutant",
     "BTNB": "Poursuivre notre chemin",
@@ -19,6 +24,7 @@ export default{
     "toTwo": "3"
   },
   "3": {
+    "img": eat,
     "title": "Après plusieurs heures de marche, vous êtes épuisé et affamé... Par chance vous repérez un insecte radioactif!",
     "BTNA":"Un vrai patriot a besoin de forces!",
     "BTNB": "Ça ne me semble pas très prudent",
@@ -31,5 +37,13 @@ export default{
     "BTNB": "Je pourrai utiliser son estomac comme gourde! En plus d'être un trophé, ça serait très pratique pour survivre.",
     "toOne":"3",
     "toTwo": "7"
-  }
+  },
+  "5": {
+    "img": eating,
+    "title": "Après plusieurs heures de marche, vous êtes épuisé et affamé... Par chance vous repérez un insecte radioactif!",
+    "BTNA":"Un vrai patriot a besoin de forces!",
+    "BTNB": "Ça ne me semble pas très prudent",
+    "toOne":"5",
+    "toTwo": "6"
+  },
 }
