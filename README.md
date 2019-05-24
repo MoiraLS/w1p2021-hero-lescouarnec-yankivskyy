@@ -36,3 +36,7 @@ URL du site : https://vault-adventure.netlify.com/
 | Multimédia | L'expérience présente une vidéo ou plus | Oui |
 | Multimédia | L'expérience présente un audio ou plus | Oui |
 | Multimédia | L'utilisateur a la possibilité de couper le son à tout moment | Non |
+
+
+![Schéma des étapes]
+(https://github.com/MoiraLS/w1p2021-hero-lescouarnec-yankivskyy/blob/master/app/assets/img/Sch%C3%A9ma.jpg)
