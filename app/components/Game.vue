@@ -1,12 +1,14 @@
 <template>
   <div class="big-header">
-    <img v-bind:src="img" alt="Vault">
-    <img v-bind:src="img2" >
+    <div class="image">
+      <img v-bind:src="img" alt="Vault">
+      <img v-bind:src="img2">
+    </div>
     <p>{{ title }}</p>
     <br />
     <div class="buttons">
       <router-link  class="button" :to="actionOne">{{ BTNA }}</router-link>
-      <router-link  class="button" :to="actionTwo">{{ BTNB }}</router-link>
+      <router-link v-show="actionTwo" class="button" :to="actionTwo">{{ BTNB }}</router-link>
     </div>
   </div>
 </template>
@@ -23,6 +25,7 @@ export default {
         return json[this.id].toOne;
       },
       actionTwo(){
+        console.log(json[this.id].toTwo)
         return json[this.id].toTwo;
       },
       BTNA(){

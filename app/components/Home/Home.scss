@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
 $vault: #0067B1;
-$Yellow: #ffeb33;
+$yellow: #FFEB33;
 
 body,
 button,
@@ -31,12 +31,23 @@ h1{
   justify-content: space-around;
   width: 70vw;
 }
+
 .button {
-  color: white;
-  text-decoration: none;
-  background: $vault;
-  padding: 8px;
   display: flex;
-  flex-direction: row;
-  border: solid $Yellow 2px;
+  align-items: center;
+  justify-content: center;
+  color: $yellow;
+  text-decoration: none;
+  background-color: $vault;
+  border: 2px solid $yellow;
+  font-size: 20px;
+  width: 20%;
+  height: 5%;
+
+  &:hover {
+    color: $vault;
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out;
+    border: 2px solid $vault;
+  }
 }
