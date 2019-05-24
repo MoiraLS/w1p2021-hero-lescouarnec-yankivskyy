@@ -39,6 +39,7 @@ h1{
   font-size: 20px;
   width: 20%;
   height: 5%;
+  transform: translateY(-30px);
 
   &:hover {
     color: $vault;

@@ -1,10 +1,12 @@
 <template>
   <div class="big-header">
+    <img class="speaker" src="../assets/img/speaker.png" alt="Mute" @click.prevent="playSound($refs.audio)">
+    <audio :src="sound" autoplay loop ref="audio"></audio>
     <div class="image">
       <img v-bind:src="img" alt="Vault">
       <img v-bind:src="img2">
     </div>
-    <p>{{ title }}</p>
+    <p class="title">{{ title }}</p>
     <br />
     <div class="buttons">
       <router-link  class="button" :to="actionOne">{{ BTNA }}</router-link>
@@ -14,9 +16,18 @@
 </template>
 
 <script>
-import json from '../data.js'
+import json from '../data.js';
+import musique from "../assets/audio/Music-Menu.mp3";
+import music from "../assets/soundService.js";
+import image from "../assets/img/speaker.png"
 
 export default {
+  data() {
+    return {
+      image: image,
+      sound: musique
+    }
+  },
     computed: {
       id(){
         return this.$route.params.id;
@@ -54,13 +65,9 @@ export default {
         const step = json[id];
         return step.img2;
       }
-      /* actions() {
-        const step = json[this.id];
-        if (!step)
-          return ''; // FIXME handle unexisting json key
-
-        return step.actions;
-      } */
+    },
+    playSound(sound){
+      music.playSound(sound);
     }
 };
 </script>
